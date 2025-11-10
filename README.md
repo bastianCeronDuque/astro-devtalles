@@ -1,5 +1,6 @@
 # Bienvenido a mi astroApp
 
+>Soy Bastian Ceron y estoy aprendiendo acerca de lo que astro nos puede ofrecer en cuanto a soluciones para sitios web que se centren en el contenido.
 
 ## 🧞 Comandos para la instalacion
 
