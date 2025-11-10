@@ -1,0 +1,28 @@
+---
+import NavBar from "../components/NavBar.astro";
+//server only///esto es solamente ejecutado en el servidor
+const { title } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <NavBar />
+    <article>
+      <slot />
+    </article>
+    <script>
+      const horaActual = new Date().toLocaleTimeString();
+      const parrafo = document.getElementById("hora-actual");
+      if (parrafo) {
+        parrafo.textContent = `La hora actual es: ${horaActual}`;
+      }
+    </script>
+  </body>
+</html>
